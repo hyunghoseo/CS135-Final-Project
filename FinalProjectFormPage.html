@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Holla' 4 Help</title>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <link href="FinalProject.css" rel="stylesheet" />
+  <script type="text/javascript">
+    function getResult() {
+      document.getElementById("result_wrapper").style.display = "block";
+    }
+
+    function reset_form() {
+      document.getElementById("result_wrapper").style.display = "none";
+    }
+  </script>
+  <meta charset="utf-8" />
+  <meta name="description" content="Helpful website to find helpful hands to do helpful things.">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Request Form</h1>
+      <p>Holla' 4 Help</p>
+      <nav>
+        <ul>
+          <li><a href="file:///C:\Users\Hyungho\Downloads\FinalProject\FinalProjectHomePage.html" target="_blank">Home Page</a></li>
+          <li><a href="file:///C:\Users\Hyungho\Downloads\FinalProject\FinalProjectFormPage.html" target="_blank">Request Form</a></li>
+          <li><a href="file:///C:\Users\Hyungho\Downloads\FinalProject\FinalProjectAboutUsPage.html" target="_blank">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form name="form1" id="form1" autocomplete="off" method="get" onsubmit="getResult(); return false;">
+      <fieldset>
+        <legend>User Info</legend>
+        <label for="firstname" class="labelitem">First name:</label>
+        <input type="text" name="firstname" id="firstname" size="24" maxlength="32" placeholder="Enter first name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="First name cannot be blank." />
+        <br />
+        <label for="lastname" class="labelitem">Last name:</label>
+        <input type="text" name="lastname" id="lastname" size="24" maxlength="32" placeholder="Enter last name." required pattern="[a-zA-Z][a-zA-Z'\- ]*" title="Last name cannot be blank." />
+        <br />
+        <label for="email" class="labelitem">Email address:</label>
+        <input type="text" name="email" id="email" size="24" maxlength="32" placeholder="Enter email address." required title="Email cannot be blank." />
+        <br />
+        <label for="phone" class="labelitem">Phone number:</label>
+        <input type="text" name="phone" id="phone" size="24" maxlength="32" placeholder="Enter phone number." title="Phone number cannot be blank." />
+        <br />
+        <div class="labelitem">
+          <label for="address1">Address:</label>
+        </div>
+        <div class="inputitem">
+          <input type="text" name="address1" id="address1" size="24" maxlength="32" placeholder="Enter street address." required pattern=".+" title="Address cannot be blank." />
+          <br />
+          <input type="text" name="address2" id="address2" size="24" maxlength="32" />
+          <br />
+        </div>
+        <br />
+
+        <label for="region" class="labelitem">Region:</label>
+        <select name="region" id="region" required>
+          <option value="" selected disabled>Choose a region</option>
+          <option value="East">East</option>
+          <option value="West">West</option>
+        </select>
+        <br />
+        <label for="city" class="labelitem">City:</label>
+        <input type="text" name="city" id="city" size="24" maxlength="32" placeholder="Enter city." required />
+        <br />
+        <label for="zipcode" class="labelitem">Zip code:</label>
+        <input type="text" name="zipcode" id="zipcode" size="24" maxlength="10" placeholder="Enter zip code." required pattern="\d{5}(\-\d{4})?" title="xxxxx or xxxxx-xxxx" />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Questions:</legend>
+
+        <label for="jobs" class="labelitem">Job:</label>
+        <select name="jobs" id="jobs" required>
+          <option value="" selected disabled>Choose a job</option>
+          <option value="Carpenter">Carpenter</option>
+          <option value="Garbage Man">Garbage Man</option>
+          <option value="Fisher">Fisher</option>
+          <option value="Shoe Maker">Shoe Maker</option>
+          <option value="" disabled>More Coming Soon!</option>
+        </select>
+        <br />
+
+        <label for="date_enrolled" class="labelitem">Starting Date:</label>
+        <input type="date" name="date_enrolled" id="date_enrolled" />
+        <br />
+
+        <label for="date_end" class="labelitem">Ending Date:</label>
+        <input type="date" name="date_end" id="date_end" />
+        <br />
+
+        <div class="labelitem">Soup or Salad?</div>
+        <div class="inputitem">
+          <input type="radio" name="salad" id="yes1" value="yes" checked />
+          <label for="yes1">Yes</label>
+          <br />
+          <input type="radio" name="salad" id="yes2" value="yes" />
+          <label for="yes2">Yes</label>
+          <br />
+        </div>
+        <br />
+
+        <label for="clothes" class="labelitem">What clothes should your helper wear?:</label>
+        <select name="clothes" id="clothes" required>
+          <option value="" selected disabled>Choose an outfit</option>
+          <option value="Dress">Dress</option>
+          <option value="Suit">Suit</option>
+          <option value="Pajamas">Pajamas</option>
+          <option value="Thong">Thong</option>
+        </select>
+        <br />
+
+        <label for="favcolor" class="labelitem">What color clothes should your helper wear?:</label>
+        <input type="color" name="favcolor" id="favcolor" />
+        <br />
+
+        <label for="info" class="labelitem">Additional Information:</label>
+        <textarea name="info" id="info" rows="10" cols="20" placeholder="Additional information"></textarea>
+        <br />
+      </fieldset>
+      <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+      </section>
+      <br />
+      <div id="result_wrapper">
+        <fieldset>
+          <legend>The Result</legend>
+          <h2>We found your perfect match!</h2>
+          <h3>Brian Borowski</h3>
+          <img src="Prof B.jpg" alt="Prof B" class="ProfBPicture" />
+          <p>Brian is one of the most helpful people we have. He can do it all.</p>
+          <section id="result"></section>
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+* {
+  font-family: 'Rambla', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+@font-face {
+  font-family: 'Mr De Haviland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(http://fonts.gstatic.com/s/mrdehaviland/v5/fD8y4L6PJ4vqDk7z8Y8e2xy7hr70KmhIxk2PT-gbMvg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Mr De Haviland';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(http://fonts.gstatic.com/s/mrdehaviland/v5/fD8y4L6PJ4vqDk7z8Y8e2xKslWWn1MxsLfxBDz9WLj0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rambla'), local('Rambla-Regular'), url(http://fonts.gstatic.com/s/rambla/v4/RdAtQKqB_37Xb5Wjf2ote_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Rambla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rambla'), local('Rambla-Regular'), url(http://fonts.gstatic.com/s/rambla/v4/0AvXfVhsw8_c6r3onmlo7g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+#wrapper {
+  width: 85%;
+  margin: 40px auto;
+  max-width: 1024px;
+  min-width: 360px;
+  box-shadow: 0px 0px 10px white;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0px 0px 7px #9a7fb2;
+  color: white;
+}
+
+header>p {
+  font-family: 'Mr De Haviland', cursive;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 0px 0px 10px #9a7fb2;
+  padding: 10px 0;
+  color: #8362a1;
+  opacity: .7;
+  width: 100%;
+}
+
+h2 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: #481D76;
+}
+
+h3 {
+  text-align: left;
+  font-size: 20px;
+  color: #481D76;
+}
+
+img {
+  width: auto;
+  height: 150px;
+}
+
+h3,
+p {
+  text-align: left;
+  font-size: 15px;
+  color: #481D76;
+}
+
+fieldset {
+  padding: 50px;
+  border: solid 1px #F5E6FF;
+  margin: 20px;
+  width: 30%;
+  margin: auto;
+}
+
+legend {
+  text-align: left;
+  font-size: 20px;
+  color: #481D76;
+}
+
+label {
+  text-align: left;
+  font-size: 15px;
+  color: #481D76;
+}
+
+div {
+  text-align: left;
+  font-size: 15px;
+  color: #481D76;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  align-content: center;
+  margin: 2px;
+  box-sizing: border-box;
+  border: solid 1px #E0CCF5;
+}
+
+input,
+select,
+reset {
+  background-color: white;
+  display: block;
+  border: solid 1px #E0CCF5;
+  padding: 5px;
+  align-content: center;
+}
+
+input,
+select,
+submit {
+  background-color: white;
+  display: block;
+  border: solid 1px #E0CCF5;
+  padding: 5px;
+  align-content: center;
+}
+
+#reset_submit {
+  margin: auto;
+  width: 50px;
+}
+
+.inputitem {
+  display: block;
+  float: left;
+}
+
+.labelitem {
+  display: block;
+  float: left;
+  vertical-align: text-top;
+  width: 120px;
+}
+
+br {
+  clear: left;
+}
+
+footer>p {
+  text-align: center;
+  font-size: 10px;
+  color: #481D76;
+}
+
+nav {
+  display: table;
+  background-color: #9a7fb2;
+  margin: 0px;
+  width: 98%;
+  padding: 10px;
+  opacity: .9;
+}
+
+nav>ul {
+  display: table-row;
+}
+
+nav>ul>li {
+  display: table-cell;
+  text-align: center;
+  width: 16%;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+nav>ul>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+nav>ul>li>a:link {}
+
+nav>ul>li>a:visited {
+  color: lavenderblush
+}
+
+nav>ul>li>a:hover {
+  color: lavender;
+}
+
+#imgchange {
+  max-width: 680px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px #666;
+  background: #9a7fb2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#imgchange img {
+  max-width: 100%;
+  height: auto;
+}
+
+#result_wrapper {
+  display: none;
+}
